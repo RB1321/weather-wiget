@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">
+            Weather in city
+        </h1>
+        
+        <h2 class="sub-title">
+            Check any city you want. Type the name
+            <br />
+            (e.g. London, Milan, Berlin etc.)
+        </h2>
+        <form action="" class="input-form">
+            <input type="text" id="input-city" />
+            <button type="submit" id="submit-city">Submit</button>
+        </form>
+        <button class="clear-button" id="clear-button">Clear</button>
+        <div class="sub-widget-weather" id="sub-widget-weather"></div>
+        <div class="widget-wrapper" id="widget-wrapper"></div>
+    </div>
+    
+
+    <script type="module" src="./widget.js"></script>
+</body>
+</html>
