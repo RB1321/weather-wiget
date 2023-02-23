@@ -4,7 +4,7 @@ class City {
   }
   fetchWeather = async () => {
     await fetch(
-      `http://api.openweathermap.org/data/2.5/weather?q=${this.name}&units=metric&APPID=5d066958a60d315387d9492393935c19`
+      `https://api.openweathermap.org/data/2.5/weather?q=${this.name}&units=metric&APPID=5d066958a60d315387d9492393935c19`
     )
       .then((res) => res.json())
       .then((data) => (this.weather = data))
@@ -22,7 +22,7 @@ class City {
     this.temp = this.weather.main.temp;
     this.desc = this.weather.weather[0].description;
     this.windSpeed = this.weather.wind.speed;
-    this.iconLink = `http://openweathermap.org/img/w/${this.weather.weather[0].icon}.png`;
+    this.iconLink = `https://openweathermap.org/img/w/${this.weather.weather[0].icon}.png`;
     this.feelsLike = this.weather.main.feels_like;
     this.humidity = this.weather.main.humidity;
     this.element = document.createElement("div");
